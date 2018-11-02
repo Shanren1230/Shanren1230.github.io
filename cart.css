@@ -1,0 +1,203 @@
+@charset "utf-8";
+/*清除默认样式，设置基础样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font: 12px "微软雅黑",sans-serif;
+	color: #999;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+a:hover{
+	color: #64A131;
+}
+img,input{
+	vertical-align: bottom;	
+}
+#container{
+	width: 990px;
+	/*height: 401px;*/
+	margin: 0 auto;
+}
+/*导航部分*/
+#nav{
+	height: 30px;
+	background-color:#eee ;
+	line-height: 30px;
+}
+#rightNav{
+	float: right;
+}
+#rightNav li{
+	float: left;
+	text-align: center;
+}
+#rightNav li i{
+	height: 20px;
+	/*line-height: 18px;*/
+	/*float: left;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #999999;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+/*左侧导航*/
+#nav > a>i{
+	display: inline-block;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	border: 5px solid transparent;
+	border-top:5px solid black ;
+	top: 2px;
+}
+#nav a{
+	margin-left: 10px;
+}
+/*banner*/
+#banner{
+	margin: 5px auto;
+}
+#banner img{
+	/*width: 990px;*/
+	width: 100%;
+}
+/*推荐*/
+#commend{
+	/*父元素中font-size:0; 解决行内块元素水平缝隙问题*/
+	font-size: 0;
+}
+#commend img{
+	width: 240px;
+	margin-right: 10px;
+}
+/*！important将当前选择器的优先级提升到最高*/
+.no-margin{
+	margin: 0 !important; 
+}
+/*main*/
+#main>.title{
+	height:32px;
+	background-color: #f3f3f3;
+	border:1px solid #e9e9e9;
+	margin-top: 25px;
+}
+#main>.title>p{
+	float: left;
+	line-height: 32px;
+}
+#main .check-box{
+	width: 132px;
+}
+#main .check-box>input{
+	vertical-align: middle;
+}
+#main .goods{
+	width: 378px;
+}
+#main .price{
+	width: 160px;
+	text-align: center;
+}
+#main .count{
+	width: 80px;
+	text-align: center;
+}
+#main .t-sum{
+	width: 140px;
+	text-align: center;
+}
+#main .action{
+	width: 85px;
+	text-align: center;
+}
+/*商品信息*/
+.g-item>p{
+	float: left;
+	line-height: 32px;
+}
+/*.g-item>.count>input{
+	width: 30px;
+}
+.g-item>.count>a{
+	border:1px solid #999;
+	/*vertical-align:;*
+}*/
+#main .g-item{
+	height: 100px;
+	margin-top: 20px;
+	border-top: 2px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 10px 0;
+}
+#main .check-box img{
+	width: 100px;	
+	/*margin: 0 auto;*/
+}
+/*数量操作*/
+.count a{
+	float: left;
+	width: 16px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	background: #ffffff;
+	padding: 1px 0;
+	border:1px solid #cacbcb;
+
+}
+.count input{
+	float: left;
+	border-top:1px solid #cacbcb;
+	border-bottom:1px solid #cacbcb;
+	border-left: 0;
+	border-right: 0;
+	text-align: center;
+	color: #333	;
+	font-size: 12px;
+	width: 42px;
+	height: 18px;
+}
+/*底部工具栏*/
+.cart-toolbar{
+	height: 50px;
+	line-height: 50px;
+	margin:10px auto;
+	/*border:1px solid red;*/
+}
+.tool-bar{
+	float: right;
+}
+#main .tool-bar p{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+}
+.tool-bar span{
+	font-weight: 700;
+	color: #e4393c;
+	margin: 0 7px;
+	font-size: 16px;
+}
+#main .submit-btn{
+	width: 80px;
+	font-size: 20px;
+	background-color: #e4393c;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	height: 50px;
+	cursor: pointer;
+}
+
+
+
+
+
+

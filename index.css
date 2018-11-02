@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*清除默认样式，设置基础样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,span{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font: 12px "微软雅黑",sans-serif;
+	color: #999;
+	background: rgba(12,36,45,.5);
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+a:hover{
+	color: #64A131;
+}
+img,input{
+	vertical-align: bottom;	
+}
+#container{
+	width: 990px;
+	/*height: 401px;*/
+	margin: 0 auto;
+	background: white;
+}
+/*导航部分*/
+#nav{
+	height: 30px;
+	background-color:#eee ;
+	line-height: 30px;
+}
+#rightNav{
+	float: right;
+}
+#rightNav li{
+	float: left;
+	text-align: center;
+}
+#rightNav li i{
+	height: 20px;
+	/*line-height: 18px;*/
+	/*float: left;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #999999;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+/*左侧导航*/
+#nav > a>i{
+	display: inline-block;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	border: 5px solid transparent;
+	border-top:5px solid black ;
+	top: 2px;
+}
+#nav a{
+	margin-left: 10px;
+}
+/*banner*/
+#banner{
+	margin: 5px auto;
+}
+#banner img{
+	/*width: 990px;*/
+	width: 100%;
+}
+/*推荐*/
+#commend{
+	/*父元素中font-size:0; 解决行内块元素水平缝隙问题*/
+	font-size: 0;
+}
+#commend img{
+	width: 240px;
+	margin-right: 10px;
+}
+#commend .no-margin{
+	margin: 0;
+}
+/*主体信息*/
+.lipin{
+	height: 547px;
+}
+.kaquan >span{
+	/*color: red;*/
+	float: right;
+	line-height: 25px;
+	margin-top: 12px;
+	margin-right: 3px;
+}
+.shangpin{
+	width: 190px;
+	float: left;
+	margin: 4px;
+}
+.shangpin>img{
+	width: 190px;
+}
+.shang_left{
+	float: left;
+}
+.shang_left p{
+	margin: 3px;
+}
+.shang_left p:first-child{
+	color: black;
+}
+.shang_right{
+	float: right;
+}
+.shang_right img{
+	margin: 12px;
+}
+.jiating{
+	height: 300px;
+	background-color: darkturquoise;
+}

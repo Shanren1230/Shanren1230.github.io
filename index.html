@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>图片浮动</title>
+	<style type="text/css">
+		body{
+			width: 100%;
+			margin: 0 auto;
+			background-image: url(../img/1.jpg);
+			/*overflow:scroll;*/
+			background-size: cover;
+			/*background-color: rgba(139,86,90,0.9);*/
+
+			background-attachment: fixed;
+		}
+		.box{
+			margin: 0 auto;
+			/*border:1px solid red;*/
+		}
+		.a1{
+			margin: 0 auto;
+			width: 100%;
+			height: 30px;
+			/*border:1px solid red;*/
+			background-color: rgba(251,255,59,0.5);
+			position: fixed;
+			float:left;
+			z-index: -1;
+		}
+		.a2{
+			margin: 0 auto;
+			width: 1200px;
+			height: 36px;			
+			/*background-color: rgba(54,50,87,0.6);*/
+			/*opacity: 0.1;*/
+		}
+		.a2 ul{	
+			width: 1200px;
+			margin: 0;
+			margin: 0 auto;
+			padding: 0;
+			height: 30px;
+			/*border:1px solid red;*/
+
+		}
+		.a2 li{
+			list-style: none;
+			float: left;
+			width: 120px;
+			height: 30px;
+			margin: 0;
+			padding: 0;
+			background-color: rgba(43,45,51,1);
+			text-align: center;
+			line-height: 30px;
+			font-weight: lighter;
+		}
+		.a2 ul li:first-of-type{
+			border-top-left-radius: 10px;
+			border-bottom-left-radius:10px; 
+		}
+		.a2 ul li:last-of-type{
+			border-top-right-radius: 10px;
+			border-bottom-right-radius:10px; 
+		}
+		.a2 li a{
+			text-decoration: none;
+			color: white;
+
+		}
+		.a2 li:hover{
+			color: red;
+			background-color: pink;	
+			cursor: pointer;
+			border-bottom: 5px solid rgba(163,98,230,1);
+			box-shadow: 0px 2px 3px 
+			font-weight: bold;			
+		}
+		.a3{
+			margin: 0 auto;
+			width: 800px;
+			height: 300px;			
+			background-color: red;	
+			opacity: 0.8;
+			position: relative;
+		}
+		.pipi_head{
+			width: 60px;
+			height: 30px;
+			position: absolute;
+			background-color: black;
+			left: 350px;
+			top:15px;
+			border-top-left-radius: 120px;
+			border-top-right-radius: 120px;
+		}
+		.pipi_body{
+			width: 60px;
+			height: 65px;
+			background-color: black;
+			position: absolute;
+			top: 48px;
+			left: 350px;
+			border-bottom-left-radius:20%; 
+			border-bottom-right-radius: 20%;
+
+		}
+		.pipi_arm{
+			position: absolute;
+			width: 12px;
+			height: 35px;
+			background-color: black;
+			border-radius: 10px;
+
+		}
+		.pipi_arm_left{
+			top: 59px;
+			left: 332px
+		}
+		.pipi_arm_right{
+			top: 59px;
+			left: 416px;
+		}
+		.pipi_leg{
+			position: absolute;
+			width: 12px;
+			height: 35px;
+			background-color: black;
+			border-radius: 10px;
+		}
+		.pipi_leg_left{
+			top: 99px;
+			left: 363px
+		}
+		.pipi_leg_right{
+			top: 99px;
+			left: 384px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="a1"></div>
+		<div class="a2">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">中心</a></li>
+				<li><a href="#">地图</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">贴吧</a></li>
+				<li><a href="#">学术</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">设置</a></li>
+			</ul>
+		</div>
+		<div class="a3">
+			<div class="pipi_head"></div>
+			<div class="pipi_body"></div>
+
+			<div class="pipi_arm_left pipi_arm" ></div>
+			<div class="pipi_arm_right pipi_arm"></div>
+
+			<div class="pipi_leg_left pipi_leg"></div>
+			<div class="pipi_leg_right pipi_leg"></div>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
