@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GJH</title>
+		<meta charset="utf-8" />
+		<style>
+			.gjh{
+				height:100px;
+				width:240px;
+				color:skyblue;
+				font-size:60px;
+				position:relative;
+				top:200px;
+				left:800px;
+			}
+			body{
+				width:1000px;
+				height:1000px;
+				margin:0;
+				padding:0;
+			}
+			.slm{
+				height:200px;
+				width:300px;
+				position:absolute;
+				margin: 0 auto;
+				top:600px;
+			}
+			.a{
+				width:300px;
+				height:200px;
+				border-radius:200px 200px 100px 100px;
+				background-color:skyblue;
+			}
+			.b{
+				width:60px;
+				height:3px;
+				background-color:black;
+				position:absolute;
+				top:85px;
+				left:60px;
+				transform:rotate(10deg);
+			}
+			.c{
+				width:60px;
+				height:3px;
+				background-color:black;
+				position:absolute;
+				top:85px;
+				right:60px;
+				transform:rotate(-10deg);
+			}
+			.d{
+				width:50px;
+				height:50px;
+				background-color:white;
+				position:absolute;
+				top:15px;
+				left:60px;
+				border-radius:250px 80px 250px 80px;
+				transform:rotate(10deg);
+			}
+			/*.slm:hover{
+				transform:translateY(-40px);
+			}*/
+			.slm{
+				animation:slm 2s infinite;
+			}
+			@keyframes slm{
+				25%{
+					transform:scale(1.2,0.8);
+				}
+				30%{
+					transform:translateY(-300px) scale(0.8,1.2);
+				}
+				30%~95%{
+					transform:translateY(-300px) scale(0.8,1.2);
+				}
+				100%{
+					transform:scale(1,1);
+				}
+			}
+			.slm1{
+				animation:slm 2s .1s infinite;
+				left:350px;
+			}
+			.slm2{
+				animation:slm 2s .5s infinite;
+				position:absolute;
+				left:800px;
+			}
+			.slm3{
+				animation:slm 2s 1s infinite;
+				position:absolute;
+				left:1250px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="gjh">GJH-作品</div>
+		<div class="slm slm1">
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+			<div class="d"></div>
+		</div>
+		<div class="slm slm2">
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+			<div class="d"></div>
+		</div>
+		<div class="slm slm3">
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+			<div class="d"></div>
+		</div>
+		
+	</body>
+</html>
