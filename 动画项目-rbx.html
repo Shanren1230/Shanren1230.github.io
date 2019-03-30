@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>网页动画</title>
+		<style>
+			body {
+				background: white;
+			}
+			.ddm {
+				width: 300px;
+				height: 300px;
+				border-radius: 150px;
+				border: 1px solid skyblue;
+				position: relative;
+			}
+			.hhh{
+				position: absolute;
+				top: 23px;
+				left: 100px;
+			}
+			.hhh img{
+				animation:h .3s infinite;
+				width:100px;
+				height:25px;
+			}
+			.a {
+				width: 200px;
+				height: 200px;
+				border-radius: 100px;
+				background-color: #0093E5;
+				border: 1px solid black;
+				position: absolute;
+				top: 50px;
+				left: 50px;
+			}
+			.b {
+				width: 135px;
+				height: 135px;
+				border-radius: 100px;
+				background-color: white;
+				border: 1px solid black;
+				position: absolute;
+				top: 120px;
+				left: 85px;
+			}
+			.c {
+				width: 40px;
+				height: 50px;
+				border-radius: 170px 170px 170px 170px;
+				background-color: white;
+				border: 1px solid black;
+				position: absolute;
+				top: 90px;
+				left: 107px;
+				transform:all 1s; 
+				transform-origin:center;
+				
+			}
+			.d {
+				width: 40px;
+				height: 50px;
+				border-radius: 50px;
+				background-color: white;
+				border: 1px solid black;
+				position: absolute;
+				top: 90px;
+				left: 149px;
+			}
+			.e {
+				width: 20px;
+				height: 20px;
+				border-radius: 12px;
+				background-color: red;
+				border: 1px solid black;
+				position: absolute;
+				top: 134px;
+				left: 138px;
+			}
+			.e1{
+				width: 10px;
+				height: 10px;
+				border-radius: 12px;
+				background-color:white;
+				position: absolute;
+				top: 136px;
+				left: 140px;
+			}
+			.f {
+				position: absolute;
+				top: 105px;
+				left: 152px;
+				
+			}
+			.g {
+				position: absolute;
+				top: 105px;
+				left: 111px;
+				
+			}
+			.h1 {
+				width: 30px;
+				height: 3px;
+				background-color: black;
+				transform: rotate(0deg);
+				position: absolute;
+				top: 175px;
+				left: 170px;
+			}
+			.h2 {
+				width: 30px;
+				height: 3px;
+				background-color: black;
+				transform: rotate(0deg);
+				position: absolute;
+				top: 175px;
+				left: 105px;
+			}
+			.h3 {
+				width: 30px;
+				height: 3px;
+				background-color: black;
+				transform: rotate(350deg);
+				position: absolute;
+				top: 185px;
+				left: 105px;
+			}
+			.h4 {
+				width: 30px;
+				height: 3px;
+				background-color: black;
+				transform: rotate(350deg);
+				position: absolute;
+				top: 165px;
+				left: 170px;
+			}
+			.h5 {
+				width: 30px;
+				height: 3px;
+				background-color: black;
+				transform: rotate(10deg);
+				position: absolute;
+				top: 185px;
+				left: 168px;
+			}
+			.h6 {
+				width: 30px;
+				height: 3px;
+				background-color: black;
+				transform: rotate(10deg);
+				position: absolute;
+				top: 165px;
+				left: 106px;
+			}
+			.i {
+				width: 3px;
+				height: 35px;
+				background-color: black;
+				position: absolute;
+				top: 155px;
+				left: 147px;
+			}
+			.j {
+				width: 20px;
+				height: 20px;
+				border-radius: 20px;
+				background-color: white;
+				border: 1px solid skyblue;
+				position: absolute;
+				top: 163px;
+				left: 138px;
+			}
+			.k {
+				width: 30px;
+				height: 30px;
+				border-radius: 5px 0px 5px 120px;
+				background-color: red;
+				border-top: 2px solid black;
+				border-bottom: 2px solid black;
+				border-left: 2px solid black;
+				position: absolute;
+				top: 195px;
+				left: 118px;
+			}
+			.l {
+				width: 30px;
+				height: 30px;
+				border-radius: 0px 5px 120px 5px;
+				background-color: red;
+				border-top: 2px solid black;
+				border-bottom: 2px solid black;
+				border-right: 2px solid black;
+				position: absolute;
+				top: 195px;
+				left: 150px;
+			}
+			.m {
+				width: 35px;
+				height: 10px;
+				border-radius: 15px 15px 0px 0px;
+				background-color: yellow;
+				border-top: 1px solid black;
+				border-left: 1px solid black;
+				border-right: 1px solid black;
+				position: absolute;
+				top: 211px;
+				left: 132px;
+			}
+			.n {
+				width: 17.5px;
+				height: 5px;
+				border-radius: 0px 0px 0px 19px;
+				background-color: yellow;
+				border-left: 1px solid black;
+				border-bottom: 1px solid black;
+				position: absolute;
+				top: 221px;
+				left: 132px;
+			}
+			.o {
+				width: 18px;
+				height: 5px;
+				border-radius: 0px 0px 19px 0px;
+				background-color: yellow;
+				border-right: 1px solid black;
+				border-bottom: 1px solid black;
+				position: absolute;
+				top: 221px;
+				left: 149.5px;
+			}
+			.p {
+				width: 120px;
+				height: 30px;
+				background-color: white;
+				position: absolute;
+				top: 235px;
+				left: 90px;
+			}
+			.q {
+                width:130px;
+                height:8px;
+                border:1px solid black;
+                border-radius:5px;
+                background-color:#ca3232;
+                position:absolute;
+                top:235px;
+                left:85px;
+			}
+			.r{
+				width:15px;
+				height:15px;
+				border:1px solid black;
+                border-radius:8px;
+                background-color: yellow;
+                position:absolute;
+                top:235px;
+                left:140px;
+			}
+			.s span{
+				color:skyblue;
+			}
+			.f img{
+				width:35px;
+				height:25px;
+			}
+			.g img{
+				width:35px;
+				height:25px;
+			}
+			.f img{
+		       animation:a1 .3s infinite;
+			}
+			.g img{
+				animation:a2 .3s infinite;
+			}
+			@keyframes a1{
+				0%{transform:scale(1,1)
+				}
+				100%{
+					transform:scale(1.5,1.5);
+					opacity:0.4;
+					
+				}
+			}
+			@keyframes a2{
+				0%{transform:scale(1,1)
+				}
+				100%{
+					transform:scale(1.5,1.5);
+					opacity:0.4;
+				}
+			}
+			@keyframes h{
+				0%{transform:scale(1,1)
+				}
+				100%{
+					transform:scale(1.5,1.5);
+					opacity:0.4;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class='ddm'>
+			<!-- 无敌 -->
+			<div class='hhh'>
+				<img src='hhh.png'/>
+			</div>
+			<!-- 大蓝圆 -->
+			<div class='a'></div>
+			<!-- 大白圆 -->
+			<div class='b'></div>
+			<!-- 眼睛 -->
+			<div class='c'></div>
+			<div class='d'></div>
+			<!-- 眼球 -->
+			<div class='f'>
+				<img src='rmb.jpg'/>
+			</div>
+			<div class='g'>
+				<img src='rmb.jpg'/>
+			</div>
+			<!-- 鼻子 -->
+			<div class='e'></div>
+			<!-- 鼻子反光 -->
+			<div class='e1'></div>
+			<!-- 胡子 -->
+			<div class='h1'></div>
+			<div class='h2'></div>
+			<div class='h3'></div>
+			<div class='h4'></div>
+			<div class='h5'></div>
+			<div class='h6'></div>
+			<!-- 竖线 -->
+			<div class='i'></div>
+			<!-- 圆圈 -->
+			<div class='j'></div>
+			<!-- 嘴巴 -->
+			<div class='k'></div>
+			<div class='l'></div>
+			<!-- 舌头 -->
+			<div class='m'></div>
+			<div class='n'></div>
+			<div class='o'></div>
+			<!-- 空白 -->
+			<div class='p'></div>
+			<!-- 项链 -->
+			<div class='q'></div>
+			<!-- 铃铛 -->
+			<div class='r'></div>
+			<!-- 名字 -->
+			<div class='s'>
+				<span>任博旭--作品</span>
+			</div>
+		</div>
+
+	</body>
+</html>
