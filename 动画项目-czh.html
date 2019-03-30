@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+		<title>  </title>
+		<meta charset="UTF-8">
+		<style>
+		.hd{
+			height:400px;
+			width:400px;
+			position:relative;
+			margin: 0 auto;
+		    top: 320px;
+			animation: hd 2s  500000;
+		}
+		.imgl	{
+			height: 150px;
+			width:100px;
+			transform-origin: 200px 100px;
+			transform: rotate(50deg); 
+			background:green;
+			position:absolute;
+			border-radius:50% 50% 0 40%;
+			top: 14px;
+			left:48px;
+		}
+		
+		.imgr	{
+			height: 150px;
+			width:100px;
+			transform-origin: 200px 100px;
+			transform: rotate(-50deg); 
+			background:green;
+			position:absolute;
+			border-radius:50% 50% 40% 0;
+			top: 15px;
+			left:90px;
+			
+		}
+		.imgl{
+			transform-origin: 0px 160px;
+			transform: rotate(45deg):
+		}
+		
+		.imgr{
+			transform-origin: 100px 160px;
+			transform: rotate(45deg): 
+		}
+		
+		
+	/*	.hd:hover{
+			transform: scale(3) rotateY(360deg) rotate(360deg) rotateX(360deg) rotate(-360deg)
+		}*/
+		@keyframes hd{
+			/*0%{
+			transform: scale(1.2,1.2 ) rotateZ(360deg) rotateY(360deg) rotateX(360deg);
+			}*/
+			50%{
+			transform:scale(3) rotateZ(360deg) rotateY(360deg) rotateX(360deg);
+			}
+			/*100%{
+			transform: scale(1.2,1.2) rotateZ(360deg) rotateY(360deg) rotateX(360deg);
+			}*/
+	}
+		</style>
+	</head>
+	<body>
+		
+		
+	<div class="hd">
+		
+		<div class="imgl"> </div>
+		<div class="imgr"> </div>
+	</div>
+	
+	</body>
+	
+	
+	
+</html>

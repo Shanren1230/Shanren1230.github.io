@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html>
+	
 	<head>
+		
 		<title>GJH</title>
+		
 		<meta charset="utf-8" />
+		
 		<style>
+		
+			.A{
+				position:relative;
+				top:100px;
+				left:300px;
+			}
+			
+			.X{
+				height:700px;
+				width:2000px;
+				background-color:#33FFEE;
+				border-radius:500px 500px 0px 0px;
+			}
+			
+			.Y{
+				width:2000px;
+				height:20px;
+				background-color:#B5B5B5;
+			}
+			
 			.gjh{
 				height:100px;
-				width:240px;
-				color:skyblue;
+				width:275px;
+				color:#0078D7;
 				font-size:60px;
 				position:relative;
 				top:200px;
-				left:800px;
+				left:815px;
 			}
+			
 			body{
 				width:1000px;
 				height:1000px;
 				margin:0;
 				padding:0;
+				background-color:#16C8F3;
 			}
+			
 			.slm{
 				height:200px;
 				width:300px;
@@ -26,12 +53,14 @@
 				margin: 0 auto;
 				top:600px;
 			}
+			
 			.a{
 				width:300px;
 				height:200px;
 				border-radius:200px 200px 100px 100px;
 				background-color:skyblue;
 			}
+			
 			.b{
 				width:60px;
 				height:3px;
@@ -41,6 +70,7 @@
 				left:60px;
 				transform:rotate(10deg);
 			}
+			
 			.c{
 				width:60px;
 				height:3px;
@@ -50,6 +80,7 @@
 				right:60px;
 				transform:rotate(-10deg);
 			}
+			
 			.d{
 				width:50px;
 				height:50px;
@@ -60,12 +91,11 @@
 				border-radius:250px 80px 250px 80px;
 				transform:rotate(10deg);
 			}
-			/*.slm:hover{
-				transform:translateY(-40px);
-			}*/
+			
 			.slm{
 				animation:slm 2s infinite;
 			}
+			
 			@keyframes slm{
 				25%{
 					transform:scale(1.2,0.8);
@@ -84,6 +114,7 @@
 				animation:slm 2s .1s infinite;
 				left:350px;
 			}
+			
 			.slm2{
 				animation:slm 2s .5s infinite;
 				position:absolute;
@@ -95,28 +126,42 @@
 				left:1250px;
 			}
 		</style>
-	</head>
-	<body>
 		
-		<div class="gjh">GJH-作品</div>
-		<div class="slm slm1">
-			<div class="a"></div>
-			<div class="b"></div>
-			<div class="c"></div>
-			<div class="d"></div>
-		</div>
-		<div class="slm slm2">
-			<div class="a"></div>
-			<div class="b"></div>
-			<div class="c"></div>
-			<div class="d"></div>
-		</div>
-		<div class="slm slm3">
-			<div class="a"></div>
-			<div class="b"></div>
-			<div class="c"></div>
-			<div class="d"></div>
+	</head>
+	
+	<body>
+		<div class="A">
+			
+				<div class="gjh">GJH-作品</div>
+					
+				<div class="X">
+					<div class="slm slm1">
+					<div class="a slm1a"></div>
+					<div class="b"></div>
+					<div class="c"></div>
+					<div class="d"></div>
+				</div>
+				
+				<div class="slm slm2">
+					<div class="a"></div>
+					<div class="b"></div>
+					<div class="c"></div>
+					<div class="d"></div>
+				</div>
+				
+				<div class="slm slm3">
+					<div class="a"></div>
+					<div class="b"></div>
+					<div class="c"></div>
+					<div class="d"></div>
+				</div>
+			
+			</div>
+		
+			<div class="Y"></div>
+		
 		</div>
 		
 	</body>
+	
 </html>
