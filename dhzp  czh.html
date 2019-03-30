@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+		<title>  </title>
+		<meta charset="UTF-8">
+		<style>
+		.hd{
+			height:400px;
+			width:400px;
+			position:relative;
+			margin: 0 auto;
+		    top: 320px;
+			animation: hd 1s  500000;
+		}
+		.imgl	{
+			height: 150px;
+			width:100px;
+			transform-origin: 200px 100px;
+			transform: rotate(50deg); 
+			background:green;
+			position:absolute;
+			border-radius:50% 50% 00 40%;
+			top: 243px;
+			left:104px;
+		}
+		
+		.imgr	{
+			height: 150px;
+			width:100px;
+			transform-origin: 200px 100px;
+			transform: rotate(-50deg); 
+			background:green;
+			position:absolute;
+			border-radius:50% 50% 40% 0;
+			top: 15px;
+			left:90px;
+		}
+		@keyframes hd{
+			0%{
+			transform: scale(1.2,1.2);
+			}
+			50%{
+			transform:scale(3,3);
+			}
+			100%{
+			transform: scale(1.2,1.2);
+			}
+	}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="hd">
+		
+			<div class="imgl"> </div>
+			<div class="imgr"> </div>
+		</div>
+	
+	</body>
+	
+	
+	
+</html>
